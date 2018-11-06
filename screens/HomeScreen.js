@@ -8,23 +8,32 @@ import Recipe from '../components/Recipe';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
-    header: null,
+    title: 'Home',
   };
 
+
   render() {
-    const user = {
-      photo: require('../assets/images/user01.png'),
-      name: 'Leo Kalyn'
+    const recipe = {
+      user: {
+        photo: 'https://www.profiletalent.com.au/wp-content/uploads/2017/05/profile-talent-ant-simpson-feature.jpg',
+        name: 'Leo Kalyn'
+      },
+      photos: [
+        "https://www.lifeloveandsugar.com/wp-content/uploads/2018/04/Raspberry-Chocolate-Layer-Cake6.jpg",
+        "https://www.lifeloveandsugar.com/wp-content/uploads/2018/04/Raspberry-Chocolate-Layer-Cake4.jpg",
+        "https://www.lifeloveandsugar.com/wp-content/uploads/2018/04/Raspberry-Chocolate-Layer-Cake7.jpg"
+      ],
     };
-    const photos = [
-      require('../assets/images/food01.jpg'),
-      require('../assets/images/food02.jpg'),
-      require('../assets/images/food03.jpg'),
-    ];
+  
     return (
       <View style={styles.container}>
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-          <Recipe user={user} photos={photos} />
+          <Recipe recipe={recipe} />
+          <Recipe recipe={recipe} />
+          <Recipe recipe={recipe} />
+          <Recipe recipe={recipe} />
+          <Recipe recipe={recipe} />
+          <Recipe recipe={recipe} />
         </ScrollView>
       </View>
     );
@@ -34,6 +43,7 @@ export default class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingTop: 15,
     backgroundColor: '#fff',
   },
 });

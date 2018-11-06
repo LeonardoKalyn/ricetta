@@ -27,7 +27,7 @@ export default class PhotoCarousel extends Component {
           >
             {photos.map( (photo, index) => (
               <View style={styles.contentContainer} key={index} >
-                <Image source={photo} />
+                <Image style={styles.image} source={{uri:photo}} />
               </View>
             ))}
           </Carousel>
@@ -49,5 +49,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  image: {
+    width: 375,
+    height: 300,
   },
 });

@@ -1,28 +1,20 @@
 import React from 'react';
 import {
   StyleSheet,
-  Text,
   View,
 } from 'react-native';
-import { Thumbnail, Icon } from 'native-base';
+import { Icon } from 'native-base';
+import User from './User';
 import Carousel from './Carousel';
+import Ingredients from './Ingredients';
 
 export default class Recipe extends React.Component {
-  static navigationOptions = {
-    header: null,
-  };
-
   render() {
-    const { user, photos } = this.props;
+    const { recipe, showIngredients } = this.props;
     return (
       <View style={styles.container}>
-        <View style={styles.profileContainer}>
-          <Thumbnail small source={user.photo} />
-          <Text style={styles.profileName}>
-            {user.name}
-          </Text>
-        </View>
-        <Carousel photos={photos} />
+        <User user={recipe.user} />
+        <Carousel photos={recipe.photos} />
         <View style={styles.actionsContainer}>
           <View style={styles.actionsLeft}>
             <Icon type='Entypo' name='heart-outlined' style={styles.icon} />
@@ -35,6 +27,10 @@ export default class Recipe extends React.Component {
             <Icon type='Entypo' name='bookmark' style={styles.icon} />
           </View>
         </View>
+        {
+          showIngredients &&
+          <Ingredients ingredients={recipe.ingredients} directions={recipe.directions} />
+        }
       </View>
     );
   }
@@ -44,16 +40,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-  },
-  profileContainer: {
-    width: '100%',
-    flexDirection: 'row',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-    padding: 5,
-  },
-  profileName: {
-    marginLeft: 10,
   },
   actionsContainer: {
     flexDirection: 'row',

@@ -1,0 +1,83 @@
+[
+  {
+    "user": {
+      "photo": "https://img.itdg.com.br/tdg/assets/default/users_avatars/user_avatar_original.png?mode=crop&width=60&height=60",
+      "name": "Leo Kalyn"
+    },
+    "photos": [
+      "https://www.lifeloveandsugar.com/wp-content/uploads/2018/04/Raspberry-Chocolate-Layer-Cake6.jpg",
+      "https://www.lifeloveandsugar.com/wp-content/uploads/2018/04/Raspberry-Chocolate-Layer-Cake4.jpg",
+      "https://www.lifeloveandsugar.com/wp-content/uploads/2018/04/Raspberry-Chocolate-Layer-Cake7.jpg",
+    ],
+    "name": "Bolo de Chocolate",
+    "ingredients": {
+      "massa": [
+        {
+          "quantity": 0.5,
+          "unity": "xícaras (chá)",
+          "name": "óleo" 
+        },
+        {
+          "quantity": 3,
+          "unity": "",
+          "name": "cenouras"
+        },
+        {
+          "quantity": 4,
+          "unity": "",
+          "name": "ovos"
+        },
+        {
+          "quantity": 2,
+          "unity": "xícaras (chá)",
+          "name": "açúcar"
+        },
+        {
+          "quantity": 2.5,
+          "unity": "xícaras (chá)",
+          "name": "açúcar"
+        },
+        {
+          "quantity": 1,
+          "unity": "colher (sopa)",
+          "name": "açúcar"
+        }
+      ],
+      "cobertura": [
+        {
+          "quantity": 1,
+          "unity": "colher (sopa)",
+          "name": "manteiga"
+        },
+        {
+          "quantity": 3,
+          "unity": "colheres (sopa)",
+          "name": "chocolade em pó"
+        },
+        {
+          "quantity": 1,
+          "unity": "xícara (chá)",
+          "name": "açúcar"
+        },
+        {
+          "quantity": 1,
+          "unity": "xícara de (chá)",
+          "name": "leite"
+        }
+      ]
+    },
+    "directions": {
+      "massa": [
+        "Em um liquidificador, adicione a cenoura, os ovos e o óleo, depois misture",
+        "Acrescente o açúcar e bata novamente por 5 minutos",
+        "Em uma tigela ou na batedeira, adicione a farinha de trigo e depois misture novamente",
+        "Acrescente o fermento e misture lentamente com uma colher",
+        "Asse em um forno preaquecido a 180° C por aproximadamente 40 minutos"
+      ],
+      "cobertura": [
+        "Despeje em uma tigela a manteiga, o chocolate em pó, o açúcar e o leite, depois misture",
+        "Leve a mistura ao fogo e continue misturando até obter uma consistência cremosa, depois despeje a calda por cima do bolo"
+      ]
+    }
+  }
+]
